@@ -28,8 +28,7 @@
         }
 
         .chat-container {
-            width: 90vw;
-            max-width: 600px;
+            width: 53vw;
             height: 80vh;
             border: 1px solid #ccc;
             border-radius: 20px;
@@ -174,8 +173,8 @@
         }
 
         function setupDrone(drone, x, y, dx, dy) {
-            drone.style.left = `${x}px`;
-            drone.style.top = `${y}px`;
+            drone.style.left = ${x}px;
+            drone.style.top = ${y}px;
 
             function moveDrone() {
                 x += dx;
@@ -189,8 +188,8 @@
                     dy = -dy;
                 }
 
-                drone.style.left = `${x}px`;
-                drone.style.top = `${y}px`;
+                drone.style.left = ${x}px;
+                drone.style.top = ${y}px;
 
                 requestAnimationFrame(moveDrone);
             }
